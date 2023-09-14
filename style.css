@@ -1,0 +1,213 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#navbar a {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+
+}
+
+#navbar a:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar {
+    background-color: #fcbf49;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
+#welcome-section {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#welcome-section h1,
+#contact h2 {
+    font-size: 3.8em;
+    letter-spacing: 1px;
+}
+
+#welcome-section p {
+    font-size: 1.5em;
+    color: #fcbf49;
+}
+
+#welcome-section div {
+    text-align: center;
+}
+
+#projects {
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#projects h2 {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 3em;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+#projects a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    font-weight: 600;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    padding: 0;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-gap: 40px;
+    padding: 0 20px 0 20px;
+    margin: 20px 30px;
+}
+
+.project {
+    background-color: #ece2d0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    background-color: #fcbf49;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 10px 20px;
+    width: auto;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+.project p:hover::before {
+    content: '< ';
+    color: rgba(255, 68, 0, 0.776);
+}
+
+.project p:hover::after {
+    content: ' />';
+    color: rgba(255, 68, 0, 0.776);
+}
+
+#contact {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.profile-link a {
+    color: white;
+    text-decoration: None;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+.profile-link:hover {
+    transform: translate(0, 10px);
+    transition-duration: 1s;
+    color: #fcbf49;
+}
+
+.profile-link a:hover {
+    color: #fcbf49;
+}
+
+#social-media {
+    color: white;
+    font-size: 1.2em;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact h2 {
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+footer {
+    text-align: right;
+    width: 100%;
+    border-top: 4px solid #fcbf49;
+    background-color: black;
+    color: white;
+}
+
+footer p {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    #grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        grid-gap: 20px;
+    }
+
+    #social-media {
+        font-size: 1em;
+    }
+}
